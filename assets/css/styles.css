@@ -471,7 +471,7 @@ input:focus, select:focus, textarea:focus {
 .brand__logo{
   height: 40px;     /* essayez 28 à 38 selon votre goût */
   width: auto;
-  max-width: 160px; /* évite un logo trop long */
+  max-width: 300px; /* évite un logo trop long */
   display:block;
   object-fit: contain;
 }
