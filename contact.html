@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demander un devis — Klape</title>
+  <meta name="description" content="Demandez un devis pour un site web premium : création, refonte, optimisation conversion. France entière." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Klape">
+          <span class="logo-mark" aria-hidden="true"></span><span>Klape</span>
+        </a>
+        <nav class="menu" data-nav>
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="realisations.html">Réalisations</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Devis</a>
+        </nav>
+        <div class="actions">
+          <a class="btn primary" href="contact.html">Demander un devis</a>
+          <button class="burger" data-burger aria-label="Ouvrir le menu"><span></span></button>
+        </div>
+      </div>
+      <div class="drawer" data-drawer>
+        <div data-nav>
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="realisations.html">Réalisations</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Devis</a>
+        </div>
+        <a class="btn primary" href="contact.html">Demander un devis</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="pagehead section top">
+    <div class="container">
+      <div class="kicker"><span class="dot"></span> Devis</div>
+      <h1>Demandez un devis.</h1>
+      <p>Réponse rapide, questions claires, zéro complexité inutile. France entière.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section tight">
+      <div class="container">
+        <div class="grid two">
+          <div class="panel">
+            <h2>Informations utiles</h2>
+            <p>Pour un devis précis, indiquez : votre activité, l’objectif du site, vos pages souhaitées et vos délais.</p>
+            <ul class="list">
+              <li><span class="badge">✓</span> Création / refonte / optimisation</li>
+              <li><span class="badge">✓</span> Exemple(s) de sites que vous aimez</li>
+              <li><span class="badge">✓</span> Contenus prêts ou à rédiger</li>
+            </ul>
+
+            <hr class="hr" />
+
+            <div class="success" data-success>
+              <strong>Message envoyé.</strong>
+              <p class="m0">Nous revenons vers vous rapidement.</p>
+            </div>
+
+            <div class="notice">
+              <strong>Note :</strong> sur GitHub Pages, un formulaire nécessite un service externe (ex. Formspree).
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Formulaire</h2>
+
+            <!-- Formspree: remplacez YOUR_FORM_ID -->
+            <form class="form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+              <!-- Anti-spam (honeypot) -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+              <!-- Redirection après envoi (optionnel) -->
+              <input type="hidden" name="_redirect" value="contact.html?sent=1">
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Nom</label>
+                  <input id="name" name="Nom" type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="Email" type="email" placeholder="vous@exemple.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="phone">Téléphone</label>
+                  <input id="phone" name="Téléphone" type="tel" placeholder="06 00 00 00 00">
+                </div>
+                <div class="field">
+                  <label for="service">Type de projet</label>
+                  <select id="service" name="Type de projet" required>
+                    <option value="" selected disabled>Choisir</option>
+                    <option>Création site vitrine</option>
+                    <option>Refonte de site</option>
+                    <option>Optimisation conversion</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="budget">Budget estimé</label>
+                <select id="budget" name="Budget">
+                  <option value="" selected disabled>Choisir</option>
+                  <option>&lt; 800€</option>
+                  <option>800€ – 1500€</option>
+                  <option>1500€ – 3000€</option>
+                  <option>3000€+</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Votre besoin</label>
+                <textarea id="message" name="Message" placeholder="Activité, pages souhaitées, exemples, délais..." required></textarea>
+              </div>
+
+              <button class="btn primary" type="submit">Envoyer la demande</button>
+              <small>En envoyant ce formulaire, vous acceptez d’être recontacté au sujet de votre demande.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand"><span class="logo-mark" aria-hidden="true"></span><span>Klape</span></div>
+          <small>Sites web premium, clairs et efficaces. France entière.</small>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <p><a href="index.html">Accueil</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="realisations.html">Réalisations</a></p>
+          <p><a href="apropos.html">À propos</a></p>
+        </div>
+        <div>
+          <h3>Contact (temporaire)</h3>
+          <p>12 rue des Horizons Numériques<br/>75000 Paris – France</p>
+          <p>contact@klape-web.fr</p>
+          <p>01 84 00 00 00</p>
+        </div>
+      </div>
+      <small>© <span id="y"></span> Klape. Tous droits réservés.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
