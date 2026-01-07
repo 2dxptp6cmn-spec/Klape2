@@ -466,18 +466,16 @@ input:focus, select:focus, textarea:focus {
   font-size: 1.05rem;
   line-height: 1;
 }
-.thumb{
-  border-radius: 22px;
-  overflow: hidden;
-  background: #eee;
-  aspect-ratio: 16 / 10;   /* garde une hauteur propre */
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+.real-thumb{
+  border-radius: 28px;
+  background: #f3f4f6;
+  padding: 14px;
 }
 
-.thumb img{
+.real-thumb img{
+  border-radius: 18px;
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;       /* remplit sans déformer */
-  object-position: top;    /* souvent mieux pour des screenshots */
+  object-fit: cover;
 }
