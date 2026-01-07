@@ -251,6 +251,29 @@ small { color: #5a637a; }
 .metric strong { display:block; font-size: 1.05rem; }
 .metric span { color: var(--muted); font-size: 0.9rem; }
 
+.hero-bg{
+  position: relative;
+  background-image: url("assets/images/hero-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-bg::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11,18,32,.65),
+    rgba(11,18,32,.35)
+  );
+}
+
+.hero-bg > *{
+  position: relative;
+  z-index: 1;
+}
+
 /* Cards */
 .card {
   border: 1px solid var(--line);
